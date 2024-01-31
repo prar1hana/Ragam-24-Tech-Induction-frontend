@@ -53,7 +53,6 @@
             </div>
         </div>
     </div>
-    <hr class="horizontal-line">
 
     </br>
     <div class="base-container">
@@ -80,13 +79,6 @@
         text-align: left;
         margin-left: 80px;
         margin-top: 90px;
-    }
-
-    .horizontal-line {
-        position: relative;
-        top: 20px;
-        border: 1px solid black;
-        margin: 20px 0;
     }
 
     .center-image {
@@ -130,24 +122,36 @@
         opacity: 0.7;
         transform: scale(1.1);
     }
-    .base-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 290px;
-    row-gap: 20%; 
+        .base-container {
+            border-top: 2px solid #000;
+            position: relative;
+            top: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding-top: 30px;
+}
+
+.base-container img {
+    
+    width: 30vw;
 }
 
 .image-container {
+    
+    position: relative;
+    top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    max-width: 290px;
-    column-gap: 10%; 
+    column-gap: 10%;
+}
+
+.image-container img {
+    width: 5vw;
 }
 
 
@@ -166,7 +170,7 @@
         color: #00000080;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 700px) {
         .container {
             justify-content: space-evenly;
             flex-direction: column;
