@@ -1,5 +1,39 @@
 
 
+.base-container {
+  border-top: 2px solid #000;
+  position: relative;
+  top: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.base-container img {
+
+width: 30vw;
+}
+
+.image-container {
+
+position: relative;
+top: 10px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+column-gap: 10%;
+}
+
+.image-container img {
+width: 5vw;
+}
+
 .logo:hover{ opacity: 0.7;
     
   transform: scale(1.1);}
