@@ -47,9 +47,10 @@
         </div>       
      </div>
 
-    <div class="learn_more">Learn more<br/>
-
-<img src="./assets/expand_more.svg"/></div>
+    <div class="learn_more">
+        <p>Learn more</p>
+        <img src="./assets/expand_more.svg"/>
+    </div>
 
     <div class="grid-containera">
         <div class="grid-itema1">
@@ -61,7 +62,6 @@
                 <div class="grid-itema2b3">As the sun began to set, casting warm hues across the horizon, the world seemed to embrace a sense of tranquility. In this serene moment, one could appreciate the beauty of nature and the simplicity of life.</div>
         </div>
     </div>
-    <hr class="horizontal-line">
 
 </br>
 
@@ -85,49 +85,23 @@
         overflow-x: hidden;
     }
 .learn_more{
+    position: relative;
+    top: 10vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.learn_more p {
     color: grey;
     font-size: 2vw;
-    position: relative;
-        top: 10vw;
-        left:50vw;
-}
-.learn_more img {width: 5%;position: relative;
-        left:2.5vw;}
-
-    .horizontal-line {
-        position: relative;
-        top: 150px;
-        border: 1px solid black;
-        margin: 20px 0;
-    }
-
-    .base-container {
-        
-        position: relative;
-        top: 150px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-}
-.base-container img {
-    width: 30vw;
+    text-align: center;
 }
 
-.image-container {
- 
-    position: relative;
-        top: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        column-gap: 10%; 
-        }
-.image-container img {
-    width: 5vw;
-        }
+.learn_more img {
+    width: 4vw;
+    align-self: center; }
+
 
 </style>
 </html>
